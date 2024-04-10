@@ -29,7 +29,7 @@ $message = "";
 $status = "false";
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    if ($_POST['form_name'] != '' and $_POST['form_email'] != '' and $_POST['form_subject'] != '' and $_POST['form_phone'] != '' and strlen($_POST['form_phone']) == 10) {
+   if ($_POST['form_name'] != '' and $_POST['form_email'] != '' and $_POST['form_subject'] != '') {
         $name = $_POST['form_name'];
         $email = $_POST['form_email'];
         $subject = $_POST['form_subject'];
