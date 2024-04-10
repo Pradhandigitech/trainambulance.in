@@ -31,7 +31,7 @@ $status = "false";
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
  $phoneno_count = strlen($_POST['form_phone']);
  if ($phoneno_count == 10) {
- if ($_POST['form_name'] != '' and $_POST['form_email'] != '' and $_POST['form_subject'] != '' and $_POST['form_phone'] != '' and strlen($_POST['form_phone']) == 10) {
+if ($_POST['form_name'] != '' and $_POST['form_email'] != '' and $_POST['form_subject'] != '' and $_POST['form_phone'] != '' and strlen($_POST['form_phone']) == 10) {
         $name = $_POST['form_name'];
         $email = $_POST['form_email'];
         $subject = $_POST['form_subject'];
