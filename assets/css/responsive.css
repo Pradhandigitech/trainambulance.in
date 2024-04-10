@@ -723,6 +723,8 @@
 
     .about-style1__content .inner-content .btns-box {
         margin-top: 21px;
+        padding-left: 15px!important;
+    
     }
 
     .about-style1__image .overlay-content {
