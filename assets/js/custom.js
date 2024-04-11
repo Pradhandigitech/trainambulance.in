@@ -696,7 +696,8 @@ if ($("#contact-form").length) {
             var form_btn = $(form).find('button[type="submit"]');
             var form_result_div = '#form-result';
             $(form_result_div).remove();
-            form_btn.before('<div id="form-result" class="alert alert-success" role="alert" style="display: none;"></div>');
+            //form_btn.before('<div id="form-result" class="alert alert-success" role="alert" style="display: none;"></div>');
+            form_btn.before('<div id="form-result" class="alert alert-success" role="alert" style="display: block;"><p>We have <strong>successfully</strong> received your Message and will get Back to you as soon as possible.</p></div>');
             var form_btn_old_msg = form_btn.html();
             form_btn.html(form_btn.prop('disabled', true).data("loading-text"));
             $(form).ajaxSubmit({
@@ -709,7 +710,7 @@ if ($("#contact-form").length) {
                     $(form_result_div).html(data.message).fadeIn('slow');
                     setTimeout(function () {
                         $(form_result_div).fadeOut('slow')
-                    }, 6000);
+                    }, 8000);
                 }
             });
         }
