@@ -706,6 +706,7 @@ if ($("#contact-form").length) {
                     if (data.status = 'true') {
                         $(form).find('.form-control').val('');
                     }
+                       document.getElementById("contact-form").reset();
                     form_btn.prop('disabled', false).html(form_btn_old_msg);
                     $(form_result_div).html(data.message).fadeIn('slow');
                     setTimeout(function () {
