@@ -322,10 +322,10 @@
     position: relative;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    padding: 28px 0px 29px;
+    padding: 0px 0px 29px;
 }
 
 .footer-bottom .bottom-inner .copyright {
