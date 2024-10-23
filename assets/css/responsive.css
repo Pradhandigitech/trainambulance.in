@@ -677,7 +677,12 @@
 
 /* Mobile Layout: 320px. */
 @media only screen and (max-width: 767px) {
-
+/* Addeed by Pratik on 23.10.2024 */
+    .carousel_heights{
+        width:100% !important;
+        height: 100% !important;
+    }
+    
     .sec-title h2 br {
         display: none;
     }
