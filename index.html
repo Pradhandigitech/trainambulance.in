@@ -535,7 +535,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
   </section>
   <!--End Features Style1 Area-->
   <!--Start Service Style1 Area-->
-  <section class="service-style1-area">
+  <section class="service-style1-area" style= "padding-bottom: 12px !important;">
     <div class="container">
       <div class="sec-title text-center">
         <div class="icon">
@@ -593,7 +593,42 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
     </div>
   </section>
   <!--End Service Style1 Area-->
-
+  <!--Added by Pratik on 23.10.24 for Crousel video-->
+ <div class= "container;"style= "background-color: #ffffff !important; z-index: 10000 !important; display: block;position:relative;">
+  <div id="videoCarousel" class="carousel slide container carousel_heights " data-ride="carousel" style = "z-index: 1000 !important; height: 50% ; width:50% " >
+     <div class="carousel-inner" style= "height:100% !important;">
+       
+      <div class="carousel-item active" style= "height:100% !important;">
+        <video class="d-block w-100" controls autoplay muted style= "height:100% !important;">
+          <source src="vedio client/VID-20241018-WA0015.mp4" type="video/mp4">
+          
+        </video>
+      </div>
+      <div class="carousel-item" style= "height:100% !important;">
+        <video class="d-block w-100" controls muted style= "height:100% !important;">
+          <source src="vedio client/VID-20241018-WA0014.mp4" type="video/mp4">
+          
+        </video>
+      </div>
+      <div class="carousel-item" style= "height:100% !important;">
+        <video class="d-block w-100" controls muted style= "height:100% !important;">
+          <source src="vedio client/VID-20241018-WA0013.mp4" type="video/mp4">
+         
+        </video>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#videoCarousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon"style="background-color:#4fa14fb3; border-radius: 50%;" aria-hidden="true"></span>
+      <span class="sr-only" >Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#videoCarousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" style="background-color:#4fa14fb3;border-radius: 50%;" aria-hidden="true"></span>
+      <span class="sr-only" style= "background-color: green ;">Next</span>
+    </a>
+  </div>
+   </div>
+ 
+  <!--EOC by Pratik on 23.10.24 for Crousel video-->
   <!--How it Works-->
   <section class="features-style2-area">
     <div class="container">
@@ -1264,7 +1299,33 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
 
   <!-- thm custom script -->
   <script src="assets/js/custom.js"></script>
+<!--Added by Pratik on 23.10.2024  -->
+  <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script>
+    
+    $(document).ready(function() {
+      $('#videoCarousel').on('slide.bs.carousel', function(e) {
+        var currentSlide = $(this).find('.carousel-item.active');
+        var video = currentSlide.find('video').get(0);
+        if (video && !video.paused) {
+          e.preventDefault();
+        }
+      });
 
+      $('video').on('pause', function() {
+        // Allow sliding when the video is paused
+        $('#videoCarousel').data('bs.carousel').pause();
+      });
+
+      $('video').on('play', function() {
+        // Prevent sliding when the video is playing
+        $('#videoCarousel').data('bs.carousel').cycle();
+      });
+    });
+  </script>
+  <!-- Eoc on 23.10.2024  -->
 
 
 </body>
