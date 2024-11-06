@@ -122,7 +122,8 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
+    
 }
 
 .header-top__left {
