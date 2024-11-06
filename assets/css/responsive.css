@@ -682,15 +682,23 @@
         width:100% !important;
         height: 100% !important;
     }
-    
+/*Added by pratik on 06.11.2024  */
+    .mail {
+        display: none !important;
+    }
+
+    .pad {
+        padding-left: 4px !important;
+    }
+/*     ENd of change by pratik on 06.11.2024*/
     .sec-title h2 br {
         display: none;
     }
 
     /*** Header Style One Css ***/
-    .header-top__right {
+/*     .header-top__right {
         display: none;
-    }
+    }  commented on 06.11.2024*/
 
     .header-right {
         display: none;
