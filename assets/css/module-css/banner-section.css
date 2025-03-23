@@ -49,20 +49,20 @@
 }
 
 .main-slider .active .slide .image-layer {
-    -webkit-transform: scale(0.2);
-    -ms-transform: scale(0.2);
-    transform: scale(0.2);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
 }
 
 .main-slider .slide .image-layer:before {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
     content: "";
     background-color: var(--thm-primary);
-    opacity: 0.50;
+    opacity: 0.30;
     z-index: -1;
 }
 
