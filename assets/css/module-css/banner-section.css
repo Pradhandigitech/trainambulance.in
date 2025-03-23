@@ -76,9 +76,9 @@
 }
 
 .main-slider .active .slide .image-layer {
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
+    -webkit-transform: scale(1.13);
+    -ms-transform: scale(1.13);
+    transform: scale(1.13);
 }
 
 .main-slider .slide {
