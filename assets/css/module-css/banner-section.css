@@ -49,9 +49,9 @@
 }
 
 .main-slider .active .slide .image-layer {
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 .main-slider .slide .image-layer:before {
@@ -76,9 +76,9 @@
 }
 
 .main-slider .active .slide .image-layer {
-    -webkit-transform: scale(1.13);
-    -ms-transform: scale(1.13);
-    transform: scale(1.13);
+    -webkit-transform: scale(1.12);
+    -ms-transform: scale(1.12);
+    transform: scale(1.12);
 }
 
 .main-slider .slide {
