@@ -40,11 +40,11 @@
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
-    -webkit-transition: all 7000ms linear;
-    -moz-transition: all 7000ms linear;
-    -ms-transition: all 7000ms linear;
-    -o-transition: all 7000ms linear;
-    transition: all 7000ms linear;
+    -webkit-transition: all 6000ms linear;
+    -moz-transition: all 6000ms linear;
+    -ms-transition: all 6000ms linear;
+    -o-transition: all 6000ms linear;
+    transition: all 6000ms linear;
     z-index: 1;
 }
 
