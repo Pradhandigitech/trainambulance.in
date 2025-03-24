@@ -37,9 +37,9 @@
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: cover;
-    -webkit-transform: scale(1.15);
-    -ms-transform: scale(1.15);
-    transform: scale(1.15);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
     -webkit-transition: all 6000ms linear;
     -moz-transition: all 6000ms linear;
     -ms-transition: all 6000ms linear;
