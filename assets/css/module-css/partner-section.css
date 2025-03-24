@@ -72,7 +72,7 @@
 }
 
 .single-partner-logo-box a img {
-    opacity: 0.20;
+    opacity: 0.50;
     width: auto;
     transition: all 0.2s ease-in-out 0.1s;
 }
