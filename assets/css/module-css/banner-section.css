@@ -62,7 +62,7 @@
     height: 100%;
     content: "";
     background-color: var(--thm-primary);
-    opacity: 0.50;
+    opacity: 0.60;
     z-index: -1;
 }
 
@@ -76,9 +76,9 @@
 }
 
 .main-slider .active .slide .image-layer {
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
+    -webkit-transform: scale(1.50);
+    -ms-transform: scale(1.50);
+    transform: scale(1.50);
 }
 
 .main-slider .slide {
