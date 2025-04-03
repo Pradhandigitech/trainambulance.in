@@ -1092,8 +1092,8 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
 
 
   <div class="bottom-parallax">
-    <!--Start footer area -->
-    <footer class="footer-area">
+     <!--Start footer area -->
+    <footer class="footer-area" style="position: unset">
       <div class="footer-area-shape float-bob" style="background-image: url(assets/images/shape/shape-2.png);"></div>
       <!--Start Footer-->
       <div class="footer">
@@ -1110,7 +1110,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                     </a>
                   </div>
                   <div class="text-box">
-                    <p>Save Life Wellness  is a leading pioneer service provider that uses train ambulance for emergency
+                    <p>Save Life Wellness is a leading pioneer services provider that uses train ambulances for emergency
                       services.</p>
                   </div>
                   <div class="footer-widget-contact-info">
@@ -1157,7 +1157,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
             </div>
             <!--End single footer widget-->
 
-            <!--Start single footer widget-->
+             <!--Start single footer widget-->
             <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
               <!--<div class="single-footer-widget single-footer-widget--link-box margintop marbtm50">-->
               <div class="single-footer-widget margintop">
@@ -1273,51 +1273,17 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                   <a href="#"><i class="fab fa fa-youtube-square"></i></a>
                 </li>
               </ul>
-            </div>--> 
+            </div>-->
           </div>
         </div>
       </div>
-
+      <button class="scroll-top scroll-to-target" data-target="html" style="display: inline-block;">
+        <span class="flaticon-up-arrow"></span>
+      </button>
 
     </footer>
     <!--End footer area-->
   </div>
-
-
-  <button class="scroll-top scroll-to-target" data-target="html">
-    <span class="flaticon-up-arrow"></span>
-  </button>
-
-  <!-- search-popup -->
-  <div id="search-popup" class="search-popup">
-    <div class="close-search"><i class="icon-close"></i></div>
-    <div class="popup-inner">
-      <div class="overlay-layer"></div>
-      <div class="search-form">
-        <form method="post" action="index.html">
-          <div class="form-group">
-            <fieldset>
-              <input type="search" class="form-control" name="search-input" value="" placeholder="Search Here" required>
-              <input type="submit" value="Search Now!" class="theme-btn style-four">
-            </fieldset>
-          </div>
-        </form>
-        <h3>Recent Search Keywords</h3>
-        <ul class="recent-searches">
-          <li><a href="index.html">waste</a></li>
-          <li><a href="index.html">Dumpster</a></li>
-          <li><a href="index.html">Zerowaste</a></li>
-          <li><a href="index.html">Garbage</a></li>
-          <li><a href="index.html">trash</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <!-- search-popup end -->
-  </div>
-
-
-
   <script src="assets/js/jquery.js"></script>
   <script src="assets/js/aos.js"></script>
   <script src="assets/js/appear.js"></script>
@@ -1347,35 +1313,6 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
 
   <!-- thm custom script -->
   <script src="assets/js/custom.js"></script>
-<!--Added by Pratik on 23.10.2024  -->
-  <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script> -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  <script>
-    
-    $(document).ready(function() {
-      $('#videoCarousel').on('slide.bs.carousel', function(e) {
-        var currentSlide = $(this).find('.carousel-item.active');
-        var video = currentSlide.find('video').get(0);
-        if (video && !video.paused) {
-          e.preventDefault();
-        }
-      });
-
-      $('video').on('pause', function() {
-        // Allow sliding when the video is paused
-        $('#videoCarousel').data('bs.carousel').pause();
-      });
-
-      $('video').on('play', function() {
-        // Prevent sliding when the video is playing
-        $('#videoCarousel').data('bs.carousel').cycle();
-      });
-    });
-  </script>
-  <!-- Eoc on 23.10.2024  -->
-
-
-</body>
 
 </html>
+
