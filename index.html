@@ -123,16 +123,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
       return false;
     }
   </script>
-  <!-- Google ADS tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16535141116">
-  </script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'AW-16535141116');
-  </script>
+  
   <!-- Event snippet for Submit lead form conversion page -->
   <script>
     gtag('event', 'conversion', {'send_to': 'AW-16535141116/Se5mCOqd8KcZEPz1yMw9'});
@@ -1361,35 +1352,42 @@ src="https://www.facebook.com/tr?id=692753806822429&ev=PageView&noscript=1"
     </footer>
     <!--End footer area-->
   </div>
-  <script src="assets/js/jquery.js"></script>
-  <script src="assets/js/aos.js"></script>
-  <script src="assets/js/appear.js"></script>
-  <script src="assets/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/isotope.js"></script>
-  <script src="assets/js/jquery.bootstrap-touchspin.js"></script>
-  <script src="assets/js/jquery.countTo.js"></script>
-  <script src="assets/js/jquery.easing.min.js"></script>
-  <script src="assets/js/jquery.event.move.js"></script>
-  <script src="assets/js/jquery.fancybox.js"></script>
-  <script src="assets/js/jquery.magnific-popup.min.js"></script>
-  <script src="assets/js/jquery.nice-select.min.js"></script>
-  <script src="assets/js/jquery.paroller.min.js"></script>
-  <script src="assets/js/jquery-sidebar-content.js"></script>
-  <script src="assets/js/knob.js"></script>
-  <script src="assets/js/map-script.js"></script>
-  <script src="assets/js/owl.js"></script>
-  <script src="assets/js/pagenav.js"></script>
-  <script src="assets/js/scrollbar.js"></script>
-  <script src="assets/js/swiper.min.js"></script>
-  <script src="assets/js/tilt.jquery.js"></script>
-  <script src="assets/js/TweenMax.min.js"></script>
-  <script src="assets/js/validation.js"></script>
-  <script src="assets/js/wow.js"></script>
 
-  <script src="assets/js/jquery-1color-switcher.min.js"></script>
+  <!-- jQuery FIRST -->
+  <script src="assets/js/jquery.js" defer></script>
 
-  <!-- thm custom script -->
-  <script src="assets/js/custom.js"></script>
+  <!-- jQuery plugins (need jquery.js) -->
+  <script src="assets/js/jquery.easing.min.js" defer></script>
+  <script src="assets/js/jquery.event.move.js" defer></script>
+  <script src="assets/js/jquery.bootstrap-touchspin.js" defer></script>
+  <script src="assets/js/jquery.countTo.js" defer></script>
+  <script src="assets/js/jquery.fancybox.js" defer></script>
+  <script src="assets/js/jquery.magnific-popup.min.js" defer></script>
+  <script src="assets/js/jquery.nice-select.min.js" defer></script>
+  <script src="assets/js/jquery.paroller.min.js" defer></script>
+  <script src="assets/js/jquery-sidebar-content.js" defer></script>
+  <script src="assets/js/tilt.jquery.js" defer></script>
+
+  <!-- Bootstrap (needs jQuery) -->
+  <script src="assets/js/bootstrap.bundle.min.js" defer></script>
+
+  <!-- Other libraries -->
+  <script src="assets/js/aos.js" defer></script>
+  <script src="assets/js/appear.js" defer></script>
+  <script src="assets/js/isotope.js" defer></script>
+  <script src="assets/js/knob.js" defer></script>
+  <script src="assets/js/map-script.js" defer></script>
+  <script src="assets/js/owl.js" defer></script>
+  <script src="assets/js/pagenav.js" defer></script>
+  <script src="assets/js/scrollbar.js" defer></script>
+  <script src="assets/js/swiper.min.js" defer></script>
+  <script src="assets/js/TweenMax.min.js" defer></script>
+  <script src="assets/js/validation.js" defer></script>
+  <script src="assets/js/wow.js" defer></script>
+  <script src="assets/js/jquery-1color-switcher.min.js" defer></script>
+
+  <!-- custom.js LAST -->
+  <script src="assets/js/custom.js" defer></script>
 
 </html>
 
