@@ -123,7 +123,16 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
       return false;
     }
   </script>
-  
+  <!-- Google ADS tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16535141116">
+  </script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-16535141116');
+  </script>
   <!-- Event snippet for Submit lead form conversion page -->
   <script>
     gtag('event', 'conversion', {'send_to': 'AW-16535141116/Se5mCOqd8KcZEPz1yMw9'});
@@ -1352,8 +1361,7 @@ src="https://www.facebook.com/tr?id=692753806822429&ev=PageView&noscript=1"
     </footer>
     <!--End footer area-->
   </div>
-
- <script src="assets/js/jquery.js"></script>
+  <script src="assets/js/jquery.js"></script>
   <script src="assets/js/aos.js"></script>
   <script src="assets/js/appear.js"></script>
   <script src="assets/js/bootstrap.bundle.min.js"></script>
@@ -1382,4 +1390,6 @@ src="https://www.facebook.com/tr?id=692753806822429&ev=PageView&noscript=1"
 
   <!-- thm custom script -->
   <script src="assets/js/custom.js"></script>
+
 </html>
+
