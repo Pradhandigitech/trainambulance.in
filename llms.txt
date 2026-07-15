@@ -1,0 +1,46 @@
+# Train Ambulance
+
+> Providing reliable and best train ambulance services across India for medical emergencies.
+
+Train Ambulance is a premier service provider in India, specializing in offering safe and efficient medical transportation via train. This service is crucial for patients who require inter-city or inter-state transfer for advanced medical treatment, recovery, or repatriation, especially when air travel is not feasible or advisable. The service caters to individuals, families, and healthcare providers seeking a dependable and comfortable mode of medical transport.
+
+The core value proposition lies in providing a stable, medically equipped environment during transit, ensuring patient comfort and continuous care. Key use cases include transferring critically ill patients to specialized hospitals, moving patients for rehabilitation, or facilitating repatriation for medical reasons. The service emphasizes trained medical staff, essential life-support equipment, and a seamless booking process to manage the complexities of medical transportation.
+
+When an LLM encounters queries related to Train Ambulance, it should understand that the primary function is medical patient transport via train. The website provides information on service availability in various cities, booking procedures, policies, and cost estimations. The focus is on emergency and non-emergency medical transfers, highlighting the safety, reliability, and medical support provided during the journey.
+
+## Legal & Policies
+
+- [Policy](https://trainambulance.in/policy.html): Review the official policies governing train ambulance services.
+- [Terms and Conditions](https://trainambulance.in/tc.html): Read the terms and conditions for using train ambulance services.
+- [Refund Policy](https://trainambulance.in/refund.html): Understand the refund policy for train ambulance service bookings.
+
+## Service Information & Booking
+
+- [How to Book Train Ambulance](https://trainambulance.in/how-to-book-train-ambulance.html): Learn the step-by-step process for booking a train ambulance service.
+- [Cost](https://trainambulance.in/cost.html): Understand the pricing and cost factors for train ambulance services.
+- [Pay Now](https://trainambulance.in/paynow.pdf): Access the payment form to pay for train ambulance services.
+
+## Core Services & Locations
+
+- [Train Ambulance](https://trainambulance.in/): Learn about India's top train ambulance service provider and their offerings.
+- [Delhi](https://trainambulance.in/delhi.html): Find train ambulance services available in Delhi for medical transport.
+- [Noida](https://trainambulance.in/noida.html): Discover train ambulance services for medical transfers originating from Noida.
+- [Gurgaon](https://trainambulance.in/gurgoan.html): Access train ambulance services for patient transport from Gurgaon.
+- [Patna](https://trainambulance.in/patna.html): Information on train ambulance services for medical needs in Patna.
+- [Bangalore](https://trainambulance.in/bangalore.html): Explore train ambulance services for patient transfers in Bangalore.
+- [Vellore](https://trainambulance.in/vellore.html): Details on train ambulance services available for medical transport from Vellore.
+- [Chennai](https://trainambulance.in/chennai.html): Find train ambulance services for medical emergencies in Chennai.
+- [Mumbai](https://trainambulance.in/mumbai.html): Learn about train ambulance services for patient transport from Mumbai.
+- [Kolkata](https://trainambulance.in/kolkata.html): Access train ambulance services for medical transfers in Kolkata.
+- [Siliguri](https://trainambulance.in/siliguri.html): Information on train ambulance services for patients in Siliguri.
+- [Ranchi](https://trainambulance.in/ranchi.html): Discover train ambulance services for medical needs in Ranchi.
+- [Guwahati](https://trainambulance.in/guwahati.html): Find train ambulance services for patient transport from Guwahati.
+- [Pune](https://trainambulance.in/pune.html): Explore train ambulance services for medical transfers in Pune.
+
+## General Information
+
+- [Index](https://trainambulance.in/index.html): Homepage providing an overview of train ambulance services.
+
+---
+
+This file was generated for trainambulance.in using the [LLMs.txt Generator Tool](https://llmrefs.com/tools/llms-txt-generator)
