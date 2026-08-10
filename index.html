@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Best and Reliable Train Ambulance Service Provider In India | Train Ambulance</title>
+  <title>Train Ambulance Service Across India | Save Life Wellness</title>
   <meta name="DESCRIPTION"
     content="Save Life Wellness offers trusted train ambulance services across India with ICU-equipped coaches, medical escorts, and 24/7 bed-to-bed patient transfers." />
   <meta name="KEYWORDS"
@@ -93,6 +93,80 @@
 }
 </script>
   <!-- end Schema.org-->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalBusiness",
+  "@id": "https://trainambulance.in/#organization",
+  "name": "Save Life Wellness",
+  "alternateName": "Train Ambulance",
+  "url": "https://trainambulance.in/",
+  "logo": "https://trainambulance.in/assets/images/resources/logo.png",
+  "image": "https://trainambulance.in/assets/images/resources/logo.png",
+  "description": "Save Life Wellness offers train ambulance services across India with ICU-equipped coaches, medical escorts, and bed-to-bed patient transfers.",
+  "telephone": "+91-9835309230",
+  "email": "trainambulance@gmail.com",
+  "priceRange": "$$",
+  "foundingDate": "2022",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "299 A, Sharmik Kunj, Sector 110",
+    "addressLocality": "Noida",
+    "addressRegion": "Uttar Pradesh",
+    "postalCode": "201304",
+    "addressCountry": "IN"
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday", "Tuesday", "Wednesday", "Thursday",
+      "Friday", "Saturday", "Sunday"
+    ],
+    "opens": "00:00",
+    "closes": "23:59"
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Delhi" },
+    { "@type": "City", "name": "Noida" },
+    { "@type": "City", "name": "Gurgaon" },
+    { "@type": "City", "name": "Patna" },
+    { "@type": "City", "name": "Pune" },
+    { "@type": "City", "name": "Ranchi" },
+    { "@type": "City", "name": "Hyderabad" },
+    { "@type": "City", "name": "Kolkata" },
+    { "@type": "City", "name": "Guwahati" },
+    { "@type": "City", "name": "Bangalore" },
+    { "@type": "City", "name": "Vellore" },
+    { "@type": "City", "name": "Chennai" },
+    { "@type": "City", "name": "Mumbai" },
+    { "@type": "City", "name": "Siliguri" },
+    { "@type": "City", "name": "Dimapur" },
+    { "@type": "City", "name": "Thrissur" }
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Train Ambulance Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "ICU Train Ambulance",
+          "description": "ICU-equipped train coach with medical escort for critical patient transport across India."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Bed-to-Bed Train Ambulance",
+          "description": "Complete hospital-to-hospital transfer combining road ambulance pickup, train transport, and road ambulance drop-off."
+        }
+      }
+    ]
+  }
+}
+</script>
 
   <!-- search console-->
   <meta name="google-site-verification" content="kvzXl9fGbgJM-djlmSab47jCVOYd91-l4GcGqMgYo0o" />
@@ -1094,57 +1168,319 @@ src="https://www.facebook.com/tr?id=692753806822429&ev=PageView&noscript=1"
   </section>
   <!--End Main Contact Form Area-->
  <!--Start Partner Area-->
-  <section class="partner-area">
-  <div class="container">
-      <div class="brand-content">
-        <div class="inner" data-aos="slide-up" data-aos-easing="linear" data-aos-duration="1000">     
-      <div class="sec-title text-center">
-        <div class="icon">
-          <span class="icon-heartbeat"></span>
-        </div>
-          <h2>Our Offices</h2>
-      </div>
-        <ul class="partner-box partner-carousel owl-carousel owl-theme owl-dot-style1 rtl-carousel">
-                            <!--Start Single Partner Logo Box-->
-                            <li class="single-partner-logo-box">
-                                <a href="#">Patna</a>
-                            </li>
-                            <!--End Single Partner Logo Box-->
-                            <!--Start Single Partner Logo Box-->
-                            <li class="single-partner-logo-box">
-                                <a href="#">Delhi</a>
-                            </li>
-                            <!--End Single Partner Logo Box-->
-                            <!--Start Single Partner Logo Box-->
-                            <li class="single-partner-logo-box">
-                                <a href="#">Banglore</a>
-                            </li>
-                            <!--End Single Partner Logo Box-->
-                            <!--Start Single Partner Logo Box-->
-                            <li class="single-partner-logo-box">
-                                <a href="#">Ranchi</a>
-                            </li>
-                            <!--End Single Partner Logo Box-->
-                             <!--Start Single Partner Logo Box-->
-                            <li class="single-partner-logo-box">
-                                <a href="#">Guwahati</a>
-                            </li>
-                            <!--End Single Partner Logo Box-->
-                            <!--Start Single Partner Logo Box-->
-                            <li class="single-partner-logo-box">
-                                <a href="#">Pune</a>
-                            </li>
-           </li>
-                            <!--End Single Partner Logo Box-->
-                            <!--Start Single Partner Logo Box-->
-                            <li class="single-partner-logo-box">
-                                <a href="#"> Vellore</a>
-                            </li>
-                           </ul>
-        </div>
+ <!-- ============================================================
+     OUR OFFICES — horizontal slider, click a city to expand
+     its address + map below.
+     Add/remove cities in TWO places:
+       1. The <button> list inside #officesTrack
+       2. The officeData object in the script
+     ============================================================ -->
+<section class="offices-section">
+  <h2 class="offices-title">Our Offices</h2>
+
+  <div class="offices-slider">
+    <button class="slider-arrow slider-arrow-left" id="arrowLeft" aria-label="Scroll left">&#10094;</button>
+
+    <div class="offices-track-wrap">
+      <div class="offices-track" id="officesTrack">
+        <!-- Duplicate a <button> line per city. data-office key must match officeData below. -->
+        <button class="office-btn" data-office="delhi">Delhi</button>
+        <button class="office-btn" data-office="patna">Patna</button>
+        <button class="office-btn" data-office="pune">Pune</button>
+        <button class="office-btn" data-office="ranchi">Ranchi</button>
+        <button class="office-btn" data-office="hyderabad">Hyderabad</button>
+        <button class="office-btn" data-office="kolkata">Kolkata</button>
+        <button class="office-btn" data-office="guwahati">Guwahati</button>
+        <button class="office-btn" data-office="banglore">Bangalore</button>
+        <button class="office-btn" data-office="vellore">Vellore</button>
+        <button class="office-btn" data-office="chennai">Chennai</button>
+        <button class="office-btn" data-office="mumbai">Mumbai</button>
       </div>
     </div>
-  </section> 
+
+    <button class="slider-arrow slider-arrow-right" id="arrowRight" aria-label="Scroll right">&#10095;</button>
+  </div>
+
+  <!-- Reused panel for whichever city is clicked -->
+  <div class="office-detail" id="officeDetail">
+    <div class="office-detail-inner">
+      <div class="office-address">
+        <h3 id="officeCityName">City</h3>
+        <p id="officeAddressText">Address goes here</p>
+      </div>
+      <div class="office-map">
+        <iframe
+          id="officeMapFrame"
+          src=""
+          width="100%"
+          height="260"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .offices-section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  }
+
+  .offices-title {
+    color: #0a1f6b;
+    font-weight: 800;
+    font-size: 2rem;
+    margin-bottom: 36px;
+  }
+
+  .offices-slider {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .offices-track-wrap {
+    overflow: hidden;
+    flex: 1;
+  }
+
+  .offices-track {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 4px 2px 12px;
+    scrollbar-width: none;
+  }
+
+  .offices-track::-webkit-scrollbar {
+    display: none;
+  }
+
+  .office-btn {
+    flex: 0 0 auto;
+    min-width: 160px;
+    padding: 22px 20px;
+    background: #fff;
+    border: 1px dashed #cfd8ea;
+    border-radius: 4px;
+    color: #2f6bff;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: border-color 0.2s ease, background 0.2s ease;
+    white-space: nowrap;
+  }
+
+  .office-btn:hover {
+    border-color: #2f6bff;
+    background: #f5f8ff;
+  }
+
+  .office-btn.active {
+    border-style: solid;
+    border-color: #2f6bff;
+    background: #eef3ff;
+    color: #0a1f6b;
+    font-weight: 700;
+  }
+
+  .slider-arrow {
+    flex: 0 0 auto;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #cfd8ea;
+    background: #fff;
+    color: #0a1f6b;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s ease, border-color 0.2s ease;
+  }
+
+  .slider-arrow:hover {
+    background: #eef3ff;
+    border-color: #2f6bff;
+  }
+
+  .office-detail {
+    max-height: 0;
+    overflow: hidden;
+    margin-top: 0;
+    border-radius: 8px;
+    transition: max-height 0.35s ease, margin-top 0.35s ease;
+  }
+
+  .office-detail.open {
+    max-height: 500px;
+    margin-top: 28px;
+  }
+
+  .office-detail-inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    text-align: left;
+    background: #f8faff;
+    border: 1px solid #e3e9fa;
+    border-radius: 8px;
+    padding: 24px;
+  }
+
+  .office-address {
+    flex: 1 1 260px;
+  }
+
+  .office-address h3 {
+    color: #0a1f6b;
+    margin: 0 0 8px;
+    font-size: 1.2rem;
+  }
+
+  .office-address p {
+    color: #4a5568;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  .office-map {
+    flex: 1 1 320px;
+  }
+
+  .office-map iframe {
+    border-radius: 6px;
+    display: block;
+  }
+
+  @media (max-width: 600px) {
+    .office-detail-inner {
+      flex-direction: column;
+    }
+    .slider-arrow {
+      width: 32px;
+      height: 32px;
+      font-size: 0.85rem;
+    }
+  }
+</style>
+
+<script>
+  // ============================================================
+  // DATA — one entry per city. "mapQuery" is what gets searched
+  // on Google Maps. Using the full address as mapQuery gives the
+  // most accurate pin.
+  // ============================================================
+  const officeData = {
+    delhi: {
+      name: "Delhi",
+      address: "299 A, Sharmik Kunj, Sector 110, Noida – 201304, Uttar Pradesh",
+      mapQuery: "299 A, Sharmik Kunj, Sector 110, Noida – 201304, Uttar Pradesh"
+    },
+    patna: {
+      name: "Patna",
+      address: "2nd Floor, Ray Dental Hospital, Transport Nagar Rd, Kumhrar, Patna – 800026, Bihar",
+      mapQuery: "Ray Dental Hospital, Transport Nagar Rd, Kumhrar, Patna – 800026, Bihar"
+    },
+    pune: {
+      name: "Pune",
+      address: "Near Sahyadri Hospital, Vasant Baug, Bibwewadi, Pune, Maharashtra 411037",
+      mapQuery: "Sahyadri Hospital, Vasant Baug, Bibwewadi, Pune, Maharashtra 411037"
+    },
+    ranchi: {
+      name: "Ranchi",
+      address: "Near Medica Hospital, PHED Chowk, Bariatu Rd, Ranchi, Jharkhand 834009",
+      mapQuery: "Medica Hospital, PHED Chowk, Bariatu Rd, Ranchi, Jharkhand 834009"
+    },
+    hyderabad: {
+      name: "Hyderabad",
+      address: "Errum Manzil, near PVR, Irram Manzil Colony, Punjagutta, Hyderabad, Telangana 500082",
+      mapQuery: "Errum Manzil, Irram Manzil Colony, Punjagutta, Hyderabad, Telangana 500082"
+    },
+    kolkata: {
+      name: "Kolkata",
+      address: "Building No. 2, Near by Howrah police station, Howrah, West Bengal 711101",
+      mapQuery: "Howrah Police Station, Howrah, West Bengal 711101"
+    },
+    guwahati: {
+      name: "Guwahati",
+      address: "Near Apollo Hospital, Lotus Tower, International Hospitals, GS Rd, Christian Basti, Guwahati, Assam 781005",
+      mapQuery: "Apollo Hospital, Lotus Tower, GS Rd, Christian Basti, Guwahati, Assam 781005"
+    },
+    banglore: {
+      name: "Bangalore",
+      address: "Near Fortis Hospital, Bannerghatta Rd, opposite IIM, Sahyadri Layout, Panduranga Nagar, Bengaluru, Karnataka 560076",
+      mapQuery: "Fortis Hospital, Bannerghatta Rd, Panduranga Nagar, Bengaluru, Karnataka 560076"
+    },
+    vellore: {
+      name: "Vellore",
+      address: "Near Vellore CMC Hospital, Christian Medical College, IDA Scudder Rd, Vellore, Tamil Nadu 632004",
+      mapQuery: "Christian Medical College, IDA Scudder Rd, Vellore, Tamil Nadu 632004"
+    },
+    chennai: {
+      name: "Chennai",
+      address: "Near SIMS Hospital, Metro No.1 Jawaharlal Nehru Road, next to Vadapalani, Chennai, Tamil Nadu 600026",
+      mapQuery: "SIMS Hospital, Jawaharlal Nehru Road, Vadapalani, Chennai, Tamil Nadu 600026"
+    },
+    mumbai: {
+      name: "Mumbai",
+      address: "Near Fortis SL Raheja Hospital, Raheja Rugnalaya Marg, Mahim West, Mahim, Mumbai, Maharashtra 400016",
+      mapQuery: "Fortis SL Raheja Hospital, Raheja Rugnalaya Marg, Mahim West, Mumbai, Maharashtra 400016"
+    }
+  };
+
+  const buttons = document.querySelectorAll(".office-btn");
+  const detail = document.getElementById("officeDetail");
+  const cityName = document.getElementById("officeCityName");
+  const addressText = document.getElementById("officeAddressText");
+  const mapFrame = document.getElementById("officeMapFrame");
+  const track = document.getElementById("officesTrack");
+  const arrowLeft = document.getElementById("arrowLeft");
+  const arrowRight = document.getElementById("arrowRight");
+
+  let activeCity = null;
+
+  buttons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const key = btn.getAttribute("data-office");
+      const data = officeData[key];
+      if (!data) return;
+
+      // Clicking the same city again collapses the panel
+      if (activeCity === key) {
+        detail.classList.remove("open");
+        btn.classList.remove("active");
+        activeCity = null;
+        return;
+      }
+
+      buttons.forEach((b) => b.classList.remove("active"));
+      btn.classList.add("active");
+
+      cityName.textContent = data.name;
+      addressText.textContent = data.address;
+      mapFrame.src = "https://www.google.com/maps?q=" +
+        encodeURIComponent(data.mapQuery) + "&output=embed";
+
+      detail.classList.add("open");
+      activeCity = key;
+    });
+  });
+
+  // Slider arrow controls — scroll by roughly one card width per click
+  arrowLeft.addEventListener("click", () => {
+    track.scrollBy({ left: -200, behavior: "smooth" });
+  });
+  arrowRight.addEventListener("click", () => {
+    track.scrollBy({ left: 200, behavior: "smooth" });
+  });
+</script>
   <!--End Partner Area-->
 
 
