@@ -253,22 +253,27 @@ src="https://www.facebook.com/tr?id=692753806822429&ev=PageView&noscript=1"
        Google Fonts your theme already loads above. I'm inferring these are your theme fonts
        from the <link> tags — please confirm against your footer-section.css / style.css and
        swap the family names below if your actual theme font differs. -->
+  <!-- FIX: every rule below is now scoped under .asansol-content so it can never leak into
+       the theme's header/footer, which reuse plain <ul>, <li>, <h2>, <h3> tags. Previously
+       unscoped rules like `ul { padding-left: 20px }` and body-wide line-height were
+       overriding the footer's own spacing — that's what made the footer look smaller and
+       shifted forward. The .asansol-content class is added to the main wrapper <div> below. -->
   <style>
-    body { font-family: 'Catamaran', Arial, sans-serif; color: #333; margin: 0; padding: 0; line-height: 1.7; }
-    h1, h2, h3 { font-family: 'Kumbh Sans', 'Catamaran', Arial, sans-serif; }
-    h1 { color: #c0392b; font-size: 2em; }
-    h2 { color: #c0392b; font-size: 1.5em; border-bottom: 2px solid #f0dada; padding-bottom: 6px; }
-    h3 { color: #444; }
-    .cta-box { background: #c0392b; color: #fff; padding: 18px 24px; border-radius: 8px; text-align: center; margin: 30px 0; }
-    .cta-box a { color: #fff; font-size: 1.4em; font-weight: bold; text-decoration: none; }
-    table { width: 100%; border-collapse: collapse; margin: 20px 0; }
-    th { background: #c0392b; color: #fff; padding: 10px; text-align: left; }
-    td { padding: 10px; border: 1px solid #ddd; }
-    tr:nth-child(even) td { background: #fdf0f0; }
-    .faq-item { border: 1px solid #eee; border-radius: 6px; padding: 14px; margin-bottom: 12px; }
-    .faq-item h3 { margin: 0 0 8px; color: #c0392b; }
-    ul { padding-left: 20px; }
-    ul li { margin-bottom: 6px; }
+    .asansol-content { font-family: 'Catamaran', Arial, sans-serif; color: #333; line-height: 1.7; }
+    .asansol-content h1, .asansol-content h2, .asansol-content h3 { font-family: 'Kumbh Sans', 'Catamaran', Arial, sans-serif; }
+    .asansol-content h1 { color: #c0392b; font-size: 2em; }
+    .asansol-content h2 { color: #c0392b; font-size: 1.5em; border-bottom: 2px solid #f0dada; padding-bottom: 6px; }
+    .asansol-content h3 { color: #444; }
+    .asansol-content .cta-box { background: #c0392b; color: #fff; padding: 18px 24px; border-radius: 8px; text-align: center; margin: 30px 0; }
+    .asansol-content .cta-box a { color: #fff; font-size: 1.4em; font-weight: bold; text-decoration: none; }
+    .asansol-content table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+    .asansol-content th { background: #c0392b; color: #fff; padding: 10px; text-align: left; }
+    .asansol-content td { padding: 10px; border: 1px solid #ddd; }
+    .asansol-content tr:nth-child(even) td { background: #fdf0f0; }
+    .asansol-content .faq-item { border: 1px solid #eee; border-radius: 6px; padding: 14px; margin-bottom: 12px; }
+    .asansol-content .faq-item h3 { margin: 0 0 8px; color: #c0392b; }
+    .asansol-content ul { padding-left: 20px; }
+    .asansol-content ul li { margin-bottom: 6px; }
   </style>
 </head>
 
@@ -346,8 +351,9 @@ src="https://www.facebook.com/tr?id=692753806822429&ev=PageView&noscript=1"
   </header>
 
   <!-- FIX: previously two nested <div class="container"> tags wrapped this whole section,
-       which can double up your theme's container padding/max-width. Flattened to one. -->
-  <div class="container">
+       which can double up your theme's container padding/max-width. Flattened to one.
+       Also added .asansol-content here — see the scoped <style> fix above. -->
+  <div class="container asansol-content">
     <center>
       <h1>Train Ambulance Service in Asansol</h1>
     </center>
@@ -606,7 +612,7 @@ src="https://www.facebook.com/tr?id=692753806822429&ev=PageView&noscript=1"
   </div>
 
   <div class="bottom-parallax" style="opacity: 1;">
-     <!--Start footer area -->
+  <!--Start footer area -->
     <footer class="footer-area" style="position: unset">
       <div class="footer-area-shape float-bob" style="background-image: url(assets/images/shape/shape-2.png);"></div>
       <!--Start Footer-->
@@ -653,16 +659,6 @@ src="https://www.facebook.com/tr?id=692753806822429&ev=PageView&noscript=1"
                           </div>
                         </div>
                       </li>
-                      <!-- <li>
-                        <div class="inner">
-                          <div class="icon mapmarker">
-                            <span class="icon-pin"></span>
-                          </div>
-                          <div class="text">
-                            <p>Delhi, Patna, Ranchi, Guwahati, Pune, Bangalore, Vellore</p>
-                          </div>
-                        </div>
-                      </li> -->
                       <li>
                         <div class="inner">
                           <div class="icon mapmarker">
@@ -683,7 +679,6 @@ src="https://www.facebook.com/tr?id=692753806822429&ev=PageView&noscript=1"
 
              <!--Start single footer widget-->
             <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
-              <!--<div class="single-footer-widget single-footer-widget--link-box margintop marbtm50">-->
               <div class="single-footer-widget margintop">
                 <div class="title">
                   <h3>Service Location</h3>
@@ -697,7 +692,7 @@ src="https://www.facebook.com/tr?id=692753806822429&ev=PageView&noscript=1"
                     <li><a href="pune.html">Train Ambulance service in Pune</a></li>
                     <li><a href="ranchi.html">Train Ambulance service in Ranchi</a></li>
                     <li><a href="hyderabad.html">Train Ambulance service in Hyderabad</a></li>
-                    <li><a href="thrissur.html">Train Ambulance Service in Thrissur</a></li>
+					<li><a href="thrissur.html">Train Ambulance Service in Thrissur</a></li>
                   </ul>
                 </div>
               </div>
@@ -719,9 +714,7 @@ src="https://www.facebook.com/tr?id=692753806822429&ev=PageView&noscript=1"
                     <li><a href="vellore.html">Train Ambulance service in Vellore</a></li>
                     <li><a href="chennai.html">Train Ambulance service in Chennai</a></li>
                     <li><a href="mumbai.html">Train Ambulance service in Mumbai</a></li>
-                    <li><a href="dimapur.html">Train Ambulance Service in Dimapur</a></li>
-
-
+					  <li><a href="dimapur.html">Train Ambulance Service in Dimapur</a></li>
                   </ul>
                 </div>
               </div>
@@ -780,24 +773,6 @@ src="https://www.facebook.com/tr?id=692753806822429&ev=PageView&noscript=1"
             <div class="copyright">
               <p>Copyright &copy; 2022 <a href="https://trainambulance.in/">Save Life Wellness</a> All Rights Reserved.</p>
             </div>
-             <!--<div class="footer-social-link">
-              <ul class="clearfix">
-
-                <li>
-                  <a href="https://www.facebook.com/trainambulance"><i class="icon-facebook"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="icon-instagram"></i></a>
-                </li>
-                <li>
-                  <a href="https://www.linkedin.com/company/train-ambulance"><i
-                      class="fab fa fa-linkedin-square"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fab fa fa-youtube-square"></i></a>
-                </li>
-              </ul>
-            </div>-->
           </div>
         </div>
       </div>
@@ -838,4 +813,5 @@ src="https://www.facebook.com/tr?id=692753806822429&ev=PageView&noscript=1"
   <!-- thm custom script -->
   <script src="assets/js/custom.js"></script>
 
+</body>
 </html>
