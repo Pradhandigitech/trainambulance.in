@@ -94,7 +94,10 @@ h3 {
 .container h1 {
     margin-top: 100px !important;
 }
-
+.inner img {
+    width: 100% !important;
+}
+/* EOC by pratik for img to be absolute with 100% width*/
 
 a,
 a:hover,
