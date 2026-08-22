@@ -106,6 +106,7 @@
 
 .header-style-one {
     position: fixed;
+    top:0;
 }
 
 .header-top {
@@ -932,13 +933,6 @@
 
 .main-menu.style2 .navigation>li>a {
     color: #9ea8db;
-}
-
-.main-header.header-style-one {
-    position: sticky !important;
-    top: 0;
-    width: 100%;
-    z-index: 9999;
 }
 
 .main-menu.style2 .navigation>li:hover>a,
