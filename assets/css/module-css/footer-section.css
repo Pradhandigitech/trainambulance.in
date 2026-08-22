@@ -5,9 +5,10 @@
 ***/
 .bottom-parallax {
     position: relative;
-    height: 670px;
-    opacity: 0;
-    z-index: -999;
+    min-height: 670px;
+    height: auto;
+    opacity: 1;
+    z-index: 1;
 }
 
 .bottom-parallax .footer-area {
@@ -15,7 +16,7 @@
     left: 0px;
     bottom: 0px;
     right: 0px;
-    height: 670px;
+    height: auto;
 }
 
 .parallax-visible .bottom-parallax {
@@ -48,7 +49,7 @@
 
 .footer-area-bg:before {
     content: "";
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     bottom: 0;
@@ -65,7 +66,7 @@
 .footer {
     position: relative;
     display: block;
-    overflow: hidden;
+    overflow: visible;
     padding-top: 100px;
     padding-bottom: 55px;
     z-index: 9;
