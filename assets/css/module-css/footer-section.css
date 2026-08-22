@@ -16,7 +16,9 @@
     left: 0px;
     bottom: 0px;
     right: 0px;
+    min-height: 670px;
     height: auto;
+    
 }
 
 .parallax-visible .bottom-parallax {
@@ -29,6 +31,7 @@
     display: block;
     background: var(--thm-primary);
     z-index: 10;
+    
 }
 
 .footer-area-shape {
