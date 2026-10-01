@@ -68,6 +68,54 @@
   <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" href="assets/images/favicon/favicon-32x32.png" sizes="32x32">
   <link rel="icon" type="image/png" href="assets/images/favicon/favicon-16x16.png" sizes="16x16">
+  <!-- whatsaap-->	
+	<style> 
+.whatsapp-float { 
+  position: fixed; 
+  right: 22px; 
+  bottom: 22px; 
+  width: 64px; 
+  height: 64px; 
+  background: #ffffff; 
+  border-radius: 50%; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  z-index: 999999; 
+  text-decoration: none; 
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25); 
+  transition: transform 0.25s ease, box-shadow 0.25s ease; 
+} 
+ 
+.whatsapp-logo { 
+  width: 64px; 
+  height: 64px; 
+  display: block; 
+} 
+ 
+.whatsapp-float:hover { 
+  transform: scale(1.08); 
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.30); 
+} 
+ 
+.whatsapp-float:active { 
+  transform: scale(0.95); 
+} 
+ 
+@media (max-width: 600px) { 
+  .whatsapp-float { 
+    width: 58px; 
+    height: 58px; 
+    right: 15px; 
+    bottom: 15px; 
+  } 
+ 
+  .whatsapp-logo { 
+    width: 58px; 
+    height: 58px; 
+  } 
+} 
+</style>
 
   <!-- Fixing Internet Explorer-->
   <!--[if lt IE 9]>
