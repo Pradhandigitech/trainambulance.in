@@ -3879,3 +3879,8 @@ select:focus {
 .testimonial-element-page1 {
     padding-top: 220px;
 }
+.offering{
+box-sizing: border-box !important;
+border-radius: 8px !important;
+box-shadow: 0 18px 35px rgba(0, 0, 0, 0.12) !important;
+}
